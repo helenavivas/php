@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1140px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "palette": [
+        { "slug": "teal", "color": "#0f766e", "name": "Teal" },
+        { "slug": "teal-soft", "color": "#0f9f9a", "name": "Teal suave" },
+        { "slug": "yellow", "color": "#facc6b", "name": "Amarillo" },
+        { "slug": "bg", "color": "#f5f6fa", "name": "Fondo" },
+        { "slug": "text", "color": "#0f172a", "name": "Texto" }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        { "slug": "s", "size": "14px", "name": "S" },
+        { "slug": "m", "size": "18px", "name": "M" },
+        { "slug": "l", "size": "28px", "name": "L" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#f5f6fa",
+      "text": "#0f172a"
+    },
+    "typography": {
+      "fontFamily": "system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif",
+      "fontSize": "18px",
+      "lineHeight": "1.6"
+    },
+    "elements": {
+      "link": {
+        "color": { "text": "#0f766e" }
+      }
+    }
+  }
+}
