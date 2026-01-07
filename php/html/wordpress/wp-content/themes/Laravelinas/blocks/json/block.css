@@ -1,0 +1,103 @@
+/* ===== BLOQUE ZONAS ESTILO CARDS ===== */
+.it-zonas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.it-zonas-grid {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Cada bloque tipo card */
+.it-zonas-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+  padding: 1.5rem;
+  flex: 1 1 400px; /* ocupa espacio igual, responsive */
+}
+
+/* ===== TABLA ===== */
+.it-zonas-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.it-zonas-table th,
+.it-zonas-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: .95rem;
+}
+
+.it-zonas-table th {
+  background: #f0fdfa;
+  font-weight: 700;
+  color: #0f766e;
+}
+
+.it-zonas-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* ===== DIAGRAMA DE BARRAS ===== */
+.it-zonas-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.it-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.it-bar-label {
+  font-weight: 600;
+  font-size: .95rem;
+  color: #0f172a;
+}
+
+.it-bar-bg {
+  width: 100%;
+  height: 20px;
+  background: #f3f4f6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.it-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0f766e, #22c55e);
+  border-radius: 12px 0 0 12px;
+  transition: width .5s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 1024px){
+  .it-zonas-grid {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 768px){
+  .it-zonas-table th,
+  .it-zonas-table td {
+    padding: .65rem .75rem;
+    font-size: .9rem;
+  }
+
+  .it-bar-bg {
+    height: 16px;
+  }
+
+  .it-bar-label {
+    font-size: .9rem;
+  }
+}
